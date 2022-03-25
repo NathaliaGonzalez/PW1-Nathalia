@@ -7,15 +7,18 @@
     <title>Ejercicios</title>
     <link rel="stylesheet" href="css\styles.css">
     <link rel="icon" href="imagenes\icon.png">
+    <script src="js\miprimerjs.js"></script> 
 </head>
 <body>
     <h1 class="centrado"><img src="imagenes/html.png" alt="html" width="100" height="104"></h1>
-    <h1 class="centrado">HTML BASICO</h1>
+    <h1 class="centrado" id="inicio">HTML BASICO</h1>
 
     <a href="#CB" style="font-size:  90%;"><span style="border: 3px solid black">Conceptos Básicos</span></a>
     <a href="#E" style="font-size:  90%;"><span style="border: 3px solid black">Elemento HTML</span></a>
     <a href="#Style" style="font-size:  90%;"><span style="border: 3px solid black">Estilos HTML</span></a>
     <a href="#MP" style="font-size:  90%;"><span style="border: 3px solid black">Mapas de Imagenes</span></a>
+    <a href="#JS" style="font-size:  90%;"><span style="border: 3px solid black">Mi primer JS</span></a>
+    <a href="#Em" style="font-size:  90%;"><span style="border: 3px solid black">Emojis</span></a>
     <h1 id="CB">Conceptos básicos de HTML</h1>
     <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web 
         y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos. 
@@ -146,7 +149,7 @@
 
     <h2>Tarea 2</h2>
     <p class="centrado" id="MP"><button onclick="document.location='https://www.w3schools.com/html/default.asp'">HTML Tutorial</button></p>
-    <h1>Mapa de imagenes</h1>
+    <h1 class="centrado">Mapa de imagenes</h1>
     <p>Haga click en htm, css o javascrip para ir a una nueva página y leer más sobre el tema:</p>
     <img src="imagenes/lenguajes.png" alt="Workplace" usemap="#workmap">
 
@@ -157,7 +160,7 @@
     <br>
     <br>
 
-        <h1>Tablas</h1>
+        <h1 class="centrado">Tablas</h1>
     <table>
         <caption>Lenguajes Web</caption>
         <tr>
@@ -208,11 +211,36 @@
    <div style="border: 3px solid black">El elemento <b>div</b> es un elemento a nivel de bloque.</div>
     <br>
     <h2>Iframe - Destino para un enlace</h2>
-
     <iframe src="index.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+    <br>
 
-    
-
+    <h1 class="centrado" id="JS">MI PRIMER JAVASCRIPT</h1>
+    <p>Aquí, un JavaScript cambia el valor del atributo src (fuente) de una imagen</p>
+    <p class="centrado"><img id="myImage" src="imagenes/pic_bulboff.gif" width="100" height="180"></p>
+    <p class="centrado">
+    <button type="button" onclick="luz(1)">Luz Encendida</button>
+    <button type="button" onclick="luz(0)">Luz Apagada</button>
+    </p>
+    <br>
+    <article class="Paises">
+        <h1 class="centrado">Paises</h1>
+        <article class="pais">
+          <h2>Francia</h2>
+          <p>Francia, en Europa Occidental, abarca ciudades medievales, villas alpinas y playas mediterráneas. París, su capital, es famosa por sus firmas de alta costura, los museos de arte clásico, como el Louvre, y monumentos como la Torre Eiffel.</p>
+        </article>
+        <article class="pais">
+          <h2>Mexico</h2>
+          <p>México es un país entre los Estados Unidos y América Central, conocido por las playas en el Pacífico y el golfo de México, y su diverso paisaje de montañas, desiertos y selvas. Las ruinas antiguas, como Teotihuacán y la ciudad maya de Chichén Itzá, se distribuyen por el país, al igual que las ciudades de la época colonial española. </p>
+        </article>
+        <article class="pais">
+          <h2>USA</h2>
+          <p>Estados Unidos es un país de 50 estados que ocupa una extensa franja de América del Norte, con Alaska en el noroeste y Hawái que extiende la presencia del país en el océano Pacífico. Entre las principales ciudades de la costa del Atlántico, se encuentran Nueva York, un centro global financiero y cultural, y la capital Washington D. C. Chicago, metrópolis del medio oeste, es famosa por su influencia arquitectónica y, en la costa oeste, Hollywood, Los Ángeles, es famosa por la industria cinematográfica.</p>
+        </article>
+    </article>
+    <br>
+    <h1 class="centrado" id="Em">Mi primer emoji</h1>
+    <p class="centrado">&#128512;&#128525;&#128526;&#128527;</p>
+    <a href="#inicio" style="font-size:  90%;">Ir al principio</a>
 </map>
 </body>
 </html>

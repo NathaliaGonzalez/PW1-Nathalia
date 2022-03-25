@@ -54,3 +54,21 @@ body {
   td.segunda_tabla{
     background-color: rgb(77, 240, 145);
   }
+  .Paises {
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(185, 120, 238);
+  }
+  .Paises > h1, .pais {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .pais {
+    background: rgb(255, 255, 255);
+  }
+  
+  .pais > h2, p {
+    margin: 4px;
+    font-size: 90%;
+  }
