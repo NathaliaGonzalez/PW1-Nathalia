@@ -6,31 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios</title>
     <link rel="stylesheet" href="css\styles.css">
+    <link rel="icon" href="imagenes\icon.png">
 </head>
 <body>
-    <h1 style="text-align:center;">HTML BASICO</h1>
+    <h1 class="centrado"><img src="imagenes/html.png" alt="html" width="100" height="104"></h1>
+    <h1 class="centrado">HTML BASICO</h1>
 
-    <h1>Primer titulo</h1>
-    <h2>Segundo titulo</h2>
-    <h3>Tercer titulo</h3>
-    <p>Primer párrafo</p>
-    <p>Otro párrafo</p>
-    <a href="https://www.w3schools.com">Este es un link</a>
+    <h1>Conceptos básicos de HTML</h1>
+    <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web 
+        y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos. 
+        Como lo sugiere el título, este artículo te dará una comprensión básica de HTML y cúal es su función.</p>
+    <h2>Entonces, ¿qué es HTML en realidad?</h2>
+    <p>HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu contenido.
+       HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera. 
+       Las etiquetas de encierre pueden hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar la letra, etc.</p>
+    <h3>Mas información sobre HTML en:</h3>
+    <p class="centrado"><a href="https://www.w3schools.com" target="_blank">W3Schools</a></p> 
     <br>
-    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+    <p class="centrado"><a href="imagenes/w3schools.jpg"><img src="imagenes/w3schools.jpg" alt="W3Schools.com" width="104" height="142"  title="Click para ver"></a></p>
 
     <h1 style="text-align:center;">ELEMENTOS HTML</h1>
 
-    <p>Este es un <br> párrafo con un salto de línea</p>
-
     <h1 style="text-align:center;">ATRIBUTOS HTML</h1>
 
-    <p style="color:rgb(0, 255, 234);">Este es un párrafo con color.</p>
+    <p class="centrado">Los atributos HTML proporcionan información adicional sobre los elementos HTML.</p>
+    <p>El atributo <b>style</b> se usa para agregar estilos a un elemento, como color, fuente, tamaño y más:</p>
+    <p style="color:rgb(255, 0, 179);">Este es un párrafo con color.</p>
+    <p>El atributo <b>title</b> define alguna información adicional sobre un elemento:</p>
     <p title="soy una información">Pasar cursor sobre esta palabra.</p>
+    <p>El atributo <b>href</b>  de <b>a</b> especifica la URL de la página a la que va el enlace:</p>
     <a href="https://www.w3schools.com/html/">Visitar HTML tutorial</a>
 
     <h1 style="text-align:center;">ENCABEZADOS HTML</h1>
-
+    
+    <p class="centrado">Los encabezados HTML son títulos o subtítulos que desea mostrar en una página web.</p>
     <h1 style="font-size:30px;">Encabezado 1 con estilo tamaño</h1>
     <h2>Encabezado 2</h2>
     <h3>Encabezado 3</h3>
@@ -39,16 +48,25 @@
     <h6>Encabezado 6</h6>
 
     <h1 style="text-align:center;">PARRAFOS HTML</h1>
-
-    <h1>Este es el encabezado 1</h1>
-    <p>Esto es algo de texto.</p>
+    <p> El elemento HTML <b>p</b>  define un párrafo.
+        Un párrafo siempre comienza en una nueva línea y los navegadores agregan automáticamente un espacio en blanco (un margen) antes y después de un párrafo.</p>
+    <h1>Anatomía de un documento HTML</h1>
+    <h2>!DOCTYPE html</h2>
+    <p>El tipo de documento. Es un preámbulo requerido. Anteriormente, cuando HTML era joven (cerca de 1991/2), 
+        los tipos de documento actuaban como vínculos a un conjunto de reglas que el código HTML de la página debía seguir para ser considerado bueno, 
+        lo que podía significar la verificación automática de errores y algunas otras cosas de utilidad. Sin embargo, hoy día es simplemente un artefacto antiguo que a nadie le importa, 
+        pero que debe ser incluido para que todo funcione correctamente. </p>
     <hr>  <!--separa el contenido, se muestra como una regla horizontal-->
-    <h2>Este es el encabezado 2</h2>
-    <p>Este es otro texto.</p>
+    <h2>Reglas horizontales HTML</h2>
+    <p>El elemento <b>hr</b> se usa para separar el contenido (o definir un cambio) en una página HTML:</p>
     <hr>
-
-    <p>Este es<br>un párrafo<br><!--salto de línea-->con saltos de línea.</p>
-
+    <h2>Saltos de línea HTML</h2>
+    <p>La br etiqueta define un salto de línea y es un elemento vacío sin una etiqueta de cierre:</p>
+    <p>Este es un <br> párrafo con un salto de línea</p><!--salto de línea-->
+    <hr>
+    <h2>El elemento HTML pre</h2>
+    <p>El texto dentro de un <b>pre</b>elemento se muestra en una fuente de ancho fijo (generalmente Courier) 
+        y conserva tanto los espacios como los saltos de línea:</p>
     <pre> <!--muestra en una fuente de ancho fijo-->
         My Bonnie se encuentra sobre el océano.
 
@@ -60,7 +78,7 @@
     </pre>
 
     <h1 style="text-align:center;">ESTILOS HTML</h1>
-
+    <p class="centrado">El atributo HTML stylese usa para agregar estilos a un elemento, como color, fuente, tamaño y más:</p>
     <p>Soy normal</p>
     <p style="color:red;">Soy rojo</p>  <!--color letra-->
     <p style="color:blue;">Soy azul</p>
@@ -75,7 +93,7 @@
     <p style="text-align:center;">Párrafo centrado.</p>
 
     <h1 style="text-align:center;">FORMATO HTML</h1>
-
+    <p class="centrado">HTML contiene varios elementos para definir texto con un significado especial:</p>
     <p><b>Este texto esta en negrita</b></p>
     <p><i>Este texto esta en cursiva</i></p>
     <p>Esto es<sub> subindice</sub> y <sup>superindice</sup></p>
@@ -110,7 +128,7 @@
 
     <p>El elemento de cita HTML define el título de una obra.</p>
     <p>Los navegadores suelen mostrar los elementos de cita en cursiva.</p>
-    <img src="img_el_grito.jpg" width="220" height="277" alt="El Grito">
+    <a href="https://es.wikipedia.org/wiki/El_grito" target="_blank"  ><img src="imagenes/img_el_grito.jpg" width="220" height="277" alt="El Grito"></a>
     <p><cite>El grito</cite> de Edvard Munch. Pintado en 1893.</p>
 
     <h1 style="text-align:center;">COLORES HTML</h1>
@@ -121,5 +139,15 @@
     <h1 style="background-color: tomato;">Holii Mundo</h1>
     <h1 style="background-color:DodgerBlue;">Holoo Mundo</h1>
     <h1 style="background-color:Violet;">Hola Mundo</h1>
+    <p class="centrado"><button onclick="document.location='https://www.w3schools.com/html/default.asp'">HTML Tutorial</button></p>
+    <h1>Mapa de imagenes</h1>
+    <p>Haga click en htm, css o javascrip para ir a una nueva página y leer más sobre el tema:</p>
+    <img src="imagenes/lenguajes.png" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+    <area shape="rect" coords="28,96,229,256" alt="html" href="https://codigofacilito.com/articulos/que-es-html">
+    <area shape="rect" coords="300,96,500,300" alt="css" href="https://lenguajecss.com/css/introduccion/que-es-css/">
+    <area shape="rect" coords="600,96,800,300" alt="javascrip" href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript">
+</map>
 </body>
 </html>
