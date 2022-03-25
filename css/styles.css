@@ -1,5 +1,8 @@
 body {
     background-color: rgb(230, 208, 176);
     border: 2px solid powderblue;
-    align-self: center;
+
+  }
+  h1 {
+    color: rgb(255, 0, 0);
   }
